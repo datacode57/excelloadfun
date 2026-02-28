@@ -22,11 +22,9 @@ def load_excel_raw_all_tabs(file_path):
         return None
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python read_raw_excel.py <path_to_excel_file>")
-        sys.exit(1)
-        
-    file_path = sys.argv[1]
+    # Put the full path to your Excel file here. 
+    # Example for Mac: "/Users/sandeep/Downloads/my_data.xlsx"
+    file_path = "/path/to/your/excel_file.xlsx"
     dfs = load_excel_raw_all_tabs(file_path)
     
     if dfs is not None:
